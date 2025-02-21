@@ -9,15 +9,16 @@
       font-family: sans-serif;
       margin: 0;
       padding: 0;
+      background-color: #f0f0f0;
     }
     header {
-      background-color: #f0f0f0;
+      background-color: #333;
+      color: #fff;
       padding: 20px;
       text-align: center;
     }
     nav {
-      background-color: #333;
-      color: #fff;
+      background-color: #f0f0f0;
       padding: 10px;
     }
     nav ul {
@@ -31,18 +32,41 @@
       margin: 0 10px;
     }
     nav a {
-      color: #fff;
+      color: #333;
       text-decoration: none;
+      font-weight: bold;
     }
     main {
       padding: 20px;
     }
     article {
       margin-bottom: 20px;
-      border-bottom: 1px solid #ccc;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
     }
     article h2 {
       margin-top: 0;
+      color: #333;
+    }
+    article p {
+      color: #666;
+      line-height: 1.5;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: center;
+    }
+    th {
+      background-color: #f0f0f0;
+      font-weight: bold;
     }
     footer {
       background-color: #333;
@@ -72,9 +96,83 @@
   <main>
 
     <article>
+      <h2>Boletim Escolar</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Disciplina</th>
+            <th>1º Bimestre</th>
+            <th>2º Bimestre</th>
+            <th>3º Bimestre</th>
+            <th>4º Bimestre</th>
+            <th>Média</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Matemática</td>
+            <td>8.5</td>
+            <td>7.0</td>
+            <td>9.0</td>
+            <td>8.0</td>
+            <td>8.1</td>
+          </tr>
+          <tr>
+            <td>Português</td>
+            <td>7.5</td>
+            <td>8.0</td>
+            <td>8.5</td>
+            <td>9.0</td>
+            <td>8.3</td>
+          </tr>
+          <tr>
+            <td>Ciências</td>
+            <td>9.0</td>
+            <td>8.5</td>
+            <td>7.5</td>
+            <td>8.0</td>
+            <td>8.3</td>
+          </tr>
+          <tr>
+            <td>História</td>
+            <td>8.0</td>
+            <td>9.0</td>
+            <td>8.0</td>
+            <td>8.5</td>
+            <td>8.4</td>
+          </tr>
+          <tr>
+            <td>Geografia</td>
+            <td>8.5</td>
+            <td>8.0</td>
+            <td>9.0</td>
+            <td>7.5</td>
+            <td>8.3</td>
+          </tr>
+        </tbody>
+      </table>
+    </article>
+
+    <article>
       <h2>Título da Notícia 1</h2>
       <p>Conteúdo da notícia 1...</p>
     </article>
 
     <article>
-      <h2>Título da Notícia
+      <h2>Título da Notícia 2</h2>
+      <p>Conteúdo da notícia 2...</p>
+    </article>
+
+    <article>
+      <h2>Título da Notícia 3</h2>
+      <p>Conteúdo da notícia 3...</p>
+    </article>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Boletim do Juca</p>
+  </footer>
+
+</body>
+</html>
